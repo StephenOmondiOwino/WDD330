@@ -16,3 +16,35 @@
 #backToTop:hover {
   background-color: #555;
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+main {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  min-height: 100vh;
+}
+
+#weather-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
